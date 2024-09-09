@@ -1,0 +1,197 @@
+ /* Estilos para la cabecera */
+ .cabecera {
+    background-color: #ca652c; /* Establece el color de fondo de la cabecera */
+    color: rgb(0, 0, 0); /* Establece el color del texto en NEGRO */
+    padding: 40 px 0; /* Añade relleno superior e inferior */
+    text-align: center; /* Centra el texto horizontalmente */
+    width: 100%; /* Asegura que la cabecera ocupe todo el ancho de la página */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añade una sombra para dar profundidad */
+    font-family:Lobster Two;
+    font-size: 30px;
+
+
+}
+/*estilos generales para las secciones*/
+section {
+    background-color: #F2F4EF; /* Fondo blanco */
+    border: 1px solid #ccccccd7; /* Borde gris claro */
+    padding: 20px; /* Espacio interno */
+    margin: 20px auto; /* Espacio externo y centrado */
+    border-radius: 5px; /* Bordes redondeados */
+    width: 90%; /* Ancho del 90% de la ventana */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    text-align: center; /* Alinear texto al centro */
+   
+
+}
+/*Estilos para el cuerpo*/
+body {
+    background-color: #dad490; 
+    margin: 0; /* Eliminar el margen predeterminado del body */
+    padding: 0; /* Eliminar el padding predeterminado del body */
+    font-family: Arial, sans-serif; /* Fuente predeterminada */
+    
+}
+
+/* Estilos para el h2 */
+h2 {
+    text-align: left;
+    color: #6c362b ;
+    
+}
+
+/* Estilos para el <hr> */
+hr {
+    border: 0; /* Elimina el borde predeterminado */
+    border-top: 2px solid #dad490; /* Añade un borde superior con un color y grosor específicos */
+    margin: 20px 0; /* Añade margen superior e inferior */
+}
+
+/* 4.2 Propiedades de Texto en CSS */
+.propiedades-texto .parrafo {
+    font-size: 18px; /* Establece el tamaño de la fuente en 18 píxeles */
+    text-align: left; /* Alinea el texto a la izquierda */
+    text-transform: capitalize; /* Transforma la primera letra de cada palabra a mayúscula */
+    text-decoration: underline; /* Añade una línea debajo del texto */
+}
+.propiedades-texto .cita {
+    font-size: 20px; /* Establece el tamaño de la fuente en 20 píxeles */
+    text-align: left; /* Alinea el texto a la izquierda */
+    border-left: 10px solid #be6e42; /* Añade un borde a la izquierda de 5 píxeles de ancho y color #aca9a9 */
+    padding-left: 10px; /* Añade espacio interno a la izquierda */
+    margin: 20px 0; /* Añade margen superior e inferior */
+    color: #000000; /* Establece el color de la letra en #555 */
+    background-color: #F4AD45; /* Establece el color de fondo en #797878 */
+    font-style: oblique;
+    font-style: italic;
+}
+.propiedades-texto .cita footer {
+    font-size: 16px; /* Establece el tamaño de la fuente en 16 píxeles */
+    text-align: center; /* Alinea el texto al centro */
+    text-transform: none; /* No transforma el texto */
+    color: #202020; /* Establece el color de la letra en #888 */
+}
+
+/* 4.3 Propiedades de Caja en CSS */
+        /* Estilos para la sección de propiedades de caja */
+        .propiedades-caja {
+            padding: 20px; /* Añade relleno alrededor de la sección */
+        }
+
+        /* Estilos comunes para las cajas */
+        .caja {
+            padding: 20px; /* Añade relleno dentro de las cajas */
+            margin: 20px 0; /* Añade margen superior e inferior */
+            border: 2px solid #000; /* Añade un borde a las cajas */
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* Añade una sombra a las cajas */
+            background-color: #f0f0f0; /* Establece el color de fondo de las cajas */
+            border-radius: 10px; /* Hace que las cajas sean redondeadas */
+            text-align: left; /* Alinear texto a la izquierda */
+        }
+
+        /* Estilos para la caja destacada */
+        .caja2 {
+            border: 4px solid #be7c39; /* Añade un borde más grueso y de color rojo */
+            background-color: #cd9a5e; /* Establece un fondo diferente */
+            text-align: left; /* Alinear texto a la izquierda */
+}
+
+/* 4.4 Posición Relativa y Absoluta en CSS */
+/* Estilos para el contenedor relativo */
+.relativo {
+    position: relative;
+    background-color: #d48e57; /* Color de fondo para visualización */
+    padding: 20px; /* Ajusta el padding según sea necesario */
+    margin-bottom: 50px; /* Margen inferior para evitar solapamientos */
+    width: 95%; /* Ajusta el ancho según sea necesario */
+    height: 20px; /* Ajusta la altura según sea necesario */
+    text-align: left;/* Alinear texto a la izquierda */
+}
+/* Estilos para el contenedor absoluto */
+.absoluto {
+    position: absolute;
+    top: 40px; /* Ajusta según sea necesario */
+    left: 400px; /* Ajusta según sea necesario */
+    background-color: #b05043; /* Color de fondo para visualización */
+    padding: 10px; /* Ajusta el padding según sea necesario */
+    width: 700px; /* Ajusta el ancho según sea necesario */
+    height: 20px; /* Ajusta la altura según sea necesario */
+}
+
+/* 4.5 Media Queries en CSS */
+@media (max-width: 768px) {
+    body {
+        background-color: #f0f0f0; /* Establece el color de fondo en #f0f0f0 para pantallas pequeñas */
+    }
+
+    .media-queries h1 {
+        font-size: 24px; /* Establece el tamaño de la fuente en 24 píxeles para pantallas pequeñas */
+    }
+
+    .media-queries {
+        width: 90%; /* Establece el ancho del contenedor en el 90% de la ventana para pantallas pequeñas */
+        padding: 10px; /* Añade padding para mejorar la apariencia en pantallas pequeñas */
+    }
+}
+/* 4.6 Principios de Grid en CSS */
+
+/* Estilos para el contenedor de la cuadrícula interna */
+.grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 60px; /* Espacio entre los elementos de la cuadrícula */
+}
+
+/* Estilos para los elementos de la cuadrícula */
+.grid-item {
+    margin: 20px 0; /* Añade margen superior e inferior */
+    background-color:  #c45c61; /* Color de fondo de los elementos */
+    padding: 20px; /* Espacio interno alrededor del contenido */
+    text-align: center; /* Alineación del texto en el centro */
+    border-radius: 5px; /* Bordes redonsdeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para mejorar la apariencia */
+}
+
+ 
+/* 4.7 Principios de Animaciones en CSS */
+
+.animaciones {
+    display: block; /* Utiliza el modelo de caja en bloque */
+    margin: 20px 0; /* Añade margen superior e inferior */
+    text-align: center; /* Alineación del texto en el centro */
+    width: 90%; /* Ajusta el ancho según sea necesario */
+    margin: 0 auto; /* Centra la caja horizontalmente */
+}
+
+.animacion {
+    width: 100px; /* Establece el ancho del elemento en 100 píxeles */
+    height: 100px; /* Establece la altura del elemento en 100 píxeles */
+    background-color: #D74126; /* Establece el color de fondo en #00f */
+    transition: background-color 0.5s; /* Añade una transición al cambiar el color de fondo */
+    margin-bottom: 20px; /* Añade margen inferior para separar los elementos */
+}
+
+.animacion:hover {
+    background-color: #311418; /* Cambia el color de fondo a #0f0 cuando se hace hover sobre el elemento */
+}
+
+.mover {
+    width: 100px; /* Establece el ancho del elemento en 100 píxeles */
+    height: 100px; /* Establece la altura del elemento en 100 píxeles */
+    background-color: #B16B2F; /* Establece el color de fondo en #f00 */
+    border-radius: 50%; /* Hace que el elemento sea redondo */
+    animation: move 2s infinite; /* Aplica una animación llamada "move" que dura 2 segundos y se repite infinitamente */
+    margin-bottom: 20px; /* Añade margen inferior para separar los elementos */
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(0); /* Mueve el elemento a la posición inicial */
+    }
+    50% {
+        transform: translateX(200px); /* Mueve el elemento 200 píxeles a la derecha */
+    }
+    100% {
+        transform: translateX(0); /* Mueve el elemento de vuelta a la posición inicial */
+    }
+}
