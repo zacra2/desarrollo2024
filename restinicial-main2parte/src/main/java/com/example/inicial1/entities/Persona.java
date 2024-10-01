@@ -7,8 +7,6 @@ import org.hibernate.envers.Audited;
 import org.hibernate.envers.RelationTargetAuditMode;
 
 import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.List;
 
 @Entity
 @Table(name = "persona")
@@ -20,8 +18,10 @@ import java.util.List;
 @Builder
 @Audited
 
-public class Persona extends Base  {
-
+public class Persona implements Serializable {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
 
     @Column(name = "nombre")
     private String nombre;
@@ -36,14 +36,5 @@ public class Persona extends Base  {
     @JoinColumn(name = "fk_domicilio")
     @Audited(targetAuditMode = RelationTargetAuditMode.NOT_AUDITED)
     private Domicilio domicilio;
-
-    @OneToMany(cascade = CascadeType.ALL,orphanRemoval = true)
-    @JoinTable(
-            name = "persona_libro",
-            joinColumns = @JoinColumn(name = "persona_id"),
-            inverseJoinColumns = @JoinColumn(name = "libro_id")
-    )
-    private List<Libro> libro = new ArrayList<>();
-
 }
 
