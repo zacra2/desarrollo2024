@@ -1,0 +1,8 @@
+# Normalizar finales de línea para todos los archivos de texto
+* text=auto
+
+# Especificar finales de línea para archivos específicos
+*.js text eol=lf
+*.html text eol=lf
+*.css text eol=lf
+*.json text eol=lf
