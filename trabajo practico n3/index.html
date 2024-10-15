@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Estilos básicos para los párrafos, el botón, el formulario y la lista */
+        p {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        input[type="text"], input[type="email"] {
+            padding: 10px;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            padding: 10px;
+            margin: 5px 0;
+            background-color: #f0f0f0;
+            cursor: pointer;
+        }
+        /* Estilos para deshabilitar el campo de texto */
+        input[type="text"]:disabled {
+            background-color: #e0e0e0;
+            cursor: not-allowed;
+        }
+        /* Estilos para el formulario de correo */
+        #correoForm {
+            margin-top: 20px;
+        }
+        #correoForm p {
+            margin-top: 10px;
+        }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <p>Este es el primer párrafo.</p>
+      <p>Este es el segundo párrafo.</p>
+      <p>Este es el tercer párrafo.</p>
+      <button id="cambiarColorBtn">Cambiar Color de Párrafos</button>
+
+      <form id="miFormulario">
+        <input type="text" id="campoTexto" placeholder="Escribe algo aquí">
+        <button type="button" id="mostrarAlertaBtn">Mostrar Alerta</button>
+      </form>
+
+      <ul id="miLista">
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+        <li>Elemento 5</li>
+      </ul>
+
+      <div>
+        <input type="text" id="campoTexto2" placeholder="Campo de texto 2">
+        <button type="button" id="deshabilitarBtn">Deshabilitar Campo</button>
+        <button type="button" id="habilitarBtn">Habilitar Campo</button>
+      </div>
+
+      <form id="correoForm">
+        <input type="email" id="correoInput" placeholder="Ingresa tu correo electrónico">
+        <button type="submit">Guardar Correo</button>
+      </form>
+      <p id="correoGuardado"></p>
+      <button type="button" id="eliminarCorreoBtn" style="display: none;">Eliminar Correo</button>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
